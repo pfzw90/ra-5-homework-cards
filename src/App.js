@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card/Card'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card 
+        text="Хлебобу́лочные изделия — пищевые продукты, получаемые методом выпекания из теста (состоящего как минимум из муки, воды и соли), разрыхлённого дрожжами или закваской." 
+        imageLink="https://i.pinimg.com/originals/93/66/02/9366028b861a528521bf454937101a95.jpg" 
+        imageDescription="Самая сладкая булочка"
+        width="18"
+      />
     </div>
   );
 }
