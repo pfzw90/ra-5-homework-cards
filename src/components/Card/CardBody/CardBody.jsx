@@ -13,7 +13,7 @@ export default function CardBody(props) {
             {props.children(imageOpacity)}
             <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.text}</p>
+                <p className="card-text">{props.content}</p>
                 <button className="btn btn-primary" onClick={toggleImageOpacity}>Toggle image</button>
             </div>
         </div>

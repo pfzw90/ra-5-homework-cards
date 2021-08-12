@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 export default function Card(props) {
     return (
-        <CardBody {...props}>
+        <CardBody {...props} content={props.children}>
         {(imageOpacity) => imageOpacity ? <CardImage {...props}/> : null}
         </CardBody>
       );
@@ -14,7 +14,6 @@ export default function Card(props) {
 Card.propTypes = {
     width: PropTypes.string,
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
     imageLink: PropTypes.string,
     imageDescription: PropTypes.string
 }
